@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
 
 <meta charset="UTF-8">
@@ -11,158 +12,256 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap');
 
+
 *{
     box-sizing:border-box;
     scroll-behavior:smooth;
 }
 
+
 body{
+
     margin:0;
     font-family:'Vazirmatn',sans-serif;
-    background:#0f1115;
-    color:#f5f5f5;
+    background:#F4F1EA;
+    color:#102033;
     line-height:1.8;
+
 }
 
+
 .container{
+
     max-width:1100px;
     margin:auto;
     padding:20px;
+
 }
 
 
 /* MENU */
 
+
 nav{
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 0;
+    padding:25px 0;
+
 }
+
 
 .logo{
-    font-size:28px;
+
+    font-size:30px;
     font-weight:800;
+    color:#0B1F3A;
+
 }
+
 
 .logo span{
-    color:#8b7cff;
+
+    color:#2563EB;
+
 }
+
+
 
 .menu a{
-    color:#ddd;
+
     text-decoration:none;
+    color:#263246;
     margin:0 12px;
-    font-size:15px;
+    font-size:16px;
+
 }
 
+
 .menu a:hover{
-    color:#8b7cff;
+
+    color:#2563EB;
+
 }
+
 
 
 /* HERO */
 
+
 .hero{
-    min-height:80vh;
+
+    min-height:75vh;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
+
 }
+
 
 .hero h1{
+
     font-size:70px;
-    margin-bottom:10px;
+    color:#0B1F3A;
+    margin-bottom:20px;
+
 }
+
 
 .highlight{
-    color:#8b7cff;
+
+    color:#2563EB;
+
 }
 
+
+
 .hero p{
+
     max-width:700px;
-    margin:20px auto;
-    color:#aaa;
+    margin:auto;
     font-size:22px;
+    color:#425466;
+
 }
+
 
 
 .btn{
+
     display:inline-block;
-    margin-top:25px;
-    padding:14px 40px;
-    background:#8b7cff;
+    margin-top:35px;
+    padding:14px 45px;
+    background:#2563EB;
     color:white;
-    border-radius:40px;
     text-decoration:none;
+    border-radius:40px;
     transition:.3s;
+
 }
+
 
 .btn:hover{
+
     transform:translateY(-3px);
+    background:#1D4ED8;
+
 }
 
 
-/* CARDS */
+
+/* SECTIONS */
+
 
 section{
+
     margin:50px 0;
+
 }
+
 
 
 .card{
 
-    background:#171a21;
-    padding:35px;
-    border-radius:25px;
-    border:1px solid #242833;
+    background:#FFFFFF;
+    padding:40px;
+    border-radius:28px;
+    border:1px solid #E5E7EB;
+    box-shadow:0 15px 40px rgba(11,31,58,.08);
+
 }
+
 
 
 h2{
-    font-size:32px;
+
+    color:#0B1F3A;
+    font-size:34px;
+
 }
+
+
 
 
 .skills span{
 
     display:inline-block;
-    background:#222631;
-    padding:8px 18px;
-    border-radius:20px;
+    background:#E8F0FF;
+    color:#0B1F3A;
+    padding:8px 20px;
+    border-radius:25px;
     margin:5px;
-    color:#ddd;
 
 }
+
+
+
+
+/* AI BOX */
+
+
+.ai-box{
+
+    margin:40px auto;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#2563EB,#60A5FA);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:50px;
+    box-shadow:0 20px 60px rgba(37,99,235,.35);
+
+}
+
+
 
 
 footer{
 
     text-align:center;
     padding:40px;
-    color:#777;
+    color:#64748B;
 
 }
 
 
-/* MOBILE */
+
 
 @media(max-width:700px){
+
 
 .menu{
     display:none;
 }
 
+
 .hero h1{
+
     font-size:45px;
-}
 
 }
+
+
+.card{
+
+    padding:25px;
+
+}
+
+
+}
+
 
 </style>
 
+
 </head>
+
 
 
 <body>
@@ -171,11 +270,14 @@ footer{
 <div class="container">
 
 
+
 <nav>
+
 
 <div class="logo">
 Sharifian<span>.ai</span>
 </div>
+
 
 
 <div class="menu">
@@ -187,7 +289,10 @@ Sharifian<span>.ai</span>
 
 </div>
 
+
 </nav>
+
+
 
 
 
@@ -196,76 +301,118 @@ Sharifian<span>.ai</span>
 
 <div>
 
+
+<div class="ai-box">
+AI
+</div>
+
+
 <h1>
+
 ساخت آینده با
+
 <span class="highlight">
 هوش مصنوعی
 </span>
+
 </h1>
 
 
 <p>
+
 تولید محتوا، طراحی تصاویر، ساخت ویدئو و ایده‌پردازی دیجیتال
-با استفاده از جدیدترین ابزارهای هوش مصنوعی.
+با استفاده از ابزارهای مدرن هوش مصنوعی.
+
 </p>
 
 
+
 <a class="btn" href="#contact">
+
 شروع همکاری
+
 </a>
 
 
+
 </div>
 
 
 </div>
+
+
+
 
 
 
 <section id="about">
 
+
 <div class="card">
+
 
 <h2>
 درباره من
 </h2>
 
+
 <p>
+
 من در زمینه تولید محتوای مبتنی بر هوش مصنوعی فعالیت می‌کنم.
 هدف من کمک به برندها و کسب‌وکارها برای ساخت محتوای سریع،
-خلاقانه و مدرن است.
+خلاقانه و حرفه‌ای است.
+
 </p>
+
 
 </div>
 
+
 </section>
+
+
+
+
 
 
 
 <section id="services">
 
+
 <div class="card">
+
 
 <h2>
 خدمات
 </h2>
 
+
 <p>
+
 • تولید محتوای شبکه‌های اجتماعی<br>
 • ساخت تصاویر و ویدئو با AI<br>
 • ایده‌پردازی و سناریونویسی<br>
-• مشاوره ابزارهای هوش مصنوعی
+• مشاوره استفاده از ابزارهای هوش مصنوعی
+
 </p>
 
+
 </div>
+
 
 </section>
 
 
 
+
+
+
+
 <section>
 
+
 <div class="card">
+
 
 <h2>
 ابزارها
@@ -274,55 +421,81 @@ Sharifian<span>.ai</span>
 
 <div class="skills">
 
+
 <span>ChatGPT</span>
 <span>Claude</span>
 <span>Midjourney</span>
 <span>Canva AI</span>
 <span>Runway</span>
-<span>تولید ویدئو AI</span>
-
-</div>
 
 
 </div>
+
+
+</div>
+
 
 </section>
+
+
+
+
 
 
 
 <section id="portfolio">
 
+
 <div class="card">
+
 
 <h2>
 نمونه‌کارها
 </h2>
 
+
 <p>
-به زودی پروژه‌های هوش مصنوعی و نمونه‌های تولید محتوا اضافه می‌شوند.
+
+پروژه‌های تولید محتوا، تصاویر و ویدئوهای هوش مصنوعی به زودی اضافه می‌شوند.
+
 </p>
+
 
 </div>
 
+
 </section>
+
+
+
+
 
 
 
 <section id="contact">
 
+
 <div class="card">
+
 
 <h2>
 ارتباط با من
 </h2>
 
+
 <p>
+
 ایمیل | اینستاگرام | لینکدین
+
 </p>
+
 
 </div>
 
+
 </section>
+
+
 
 
 
@@ -333,8 +506,10 @@ Sharifian<span>.ai</span>
 </footer>
 
 
+
 </div>
 
 
 </body>
+
 </html>
