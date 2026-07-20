@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,6 +13,7 @@
 
 *{
     box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
@@ -23,89 +25,139 @@ body{
 }
 
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
     padding:20px;
 }
 
-header{
-    padding:90px 20px 60px;
+
+/* MENU */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#8b7cff;
+}
+
+.menu a{
+    color:#ddd;
+    text-decoration:none;
+    margin:0 12px;
+    font-size:15px;
+}
+
+.menu a:hover{
+    color:#8b7cff;
+}
+
+
+/* HERO */
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     text-align:center;
 }
 
-h1{
-    font-size:60px;
-    margin:0;
-    letter-spacing:1px;
+.hero h1{
+    font-size:70px;
+    margin-bottom:10px;
 }
 
 .highlight{
     color:#8b7cff;
 }
 
-.subtitle{
-    font-size:24px;
-    margin-top:20px;
-    color:#d0d0d0;
+.hero p{
+    max-width:700px;
+    margin:20px auto;
+    color:#aaa;
+    font-size:22px;
 }
 
-.description{
-    max-width:650px;
-    margin:25px auto;
-    color:#aaa;
-    font-size:18px;
-}
 
 .btn{
     display:inline-block;
     margin-top:25px;
-    padding:12px 35px;
+    padding:14px 40px;
     background:#8b7cff;
     color:white;
+    border-radius:40px;
     text-decoration:none;
-    border-radius:30px;
     transition:.3s;
 }
 
 .btn:hover{
-    opacity:.8;
+    transform:translateY(-3px);
 }
+
+
+/* CARDS */
 
 section{
-    margin:40px 0;
+    margin:50px 0;
 }
 
+
 .card{
+
     background:#171a21;
     padding:35px;
     border-radius:25px;
-    margin-bottom:25px;
     border:1px solid #242833;
 }
 
+
 h2{
-    font-size:30px;
-    margin-top:0;
+    font-size:32px;
 }
 
+
 .skills span{
+
     display:inline-block;
     background:#222631;
     padding:8px 18px;
     border-radius:20px;
     margin:5px;
     color:#ddd;
+
 }
 
-.portfolio{
-    text-align:center;
-    color:#aaa;
-}
 
 footer{
+
     text-align:center;
     padding:40px;
-    color:#888;
+    color:#777;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.menu{
+    display:none;
+}
+
+.hero h1{
+    font-size:45px;
+}
+
 }
 
 </style>
@@ -115,39 +167,94 @@ footer{
 
 <body>
 
+
 <div class="container">
 
-<header>
 
-<h1>
-Sharifian<span class="highlight">.ai</span>
-</h1>
+<nav>
 
-<div class="subtitle">
-تولیدکننده محتوا با هوش مصنوعی
+<div class="logo">
+Sharifian<span>.ai</span>
 </div>
 
-<p class="description">
-ساخت محتوای خلاقانه، تصاویر، ویدئوها و ایده‌های دیجیتال
-با استفاده از قدرت هوش مصنوعی.
+
+<div class="menu">
+
+<a href="#about">درباره</a>
+<a href="#services">خدمات</a>
+<a href="#portfolio">نمونه‌کار</a>
+<a href="#contact">تماس</a>
+
+</div>
+
+</nav>
+
+
+
+<div class="hero">
+
+
+<div>
+
+<h1>
+ساخت آینده با
+<span class="highlight">
+هوش مصنوعی
+</span>
+</h1>
+
+
+<p>
+تولید محتوا، طراحی تصاویر، ساخت ویدئو و ایده‌پردازی دیجیتال
+با استفاده از جدیدترین ابزارهای هوش مصنوعی.
 </p>
 
-<a class="btn" href="#portfolio">
-مشاهده نمونه‌کارها
+
+<a class="btn" href="#contact">
+شروع همکاری
 </a>
 
-</header>
+
+</div>
 
 
-<section>
+</div>
+
+
+
+<section id="about">
 
 <div class="card">
 
-<h2>درباره من</h2>
+<h2>
+درباره من
+</h2>
 
 <p>
 من در زمینه تولید محتوای مبتنی بر هوش مصنوعی فعالیت می‌کنم.
-تمرکزم ایجاد محتوای خلاقانه، سریع و مدرن برای برندها و پروژه‌های دیجیتال است.
+هدف من کمک به برندها و کسب‌وکارها برای ساخت محتوای سریع،
+خلاقانه و مدرن است.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="services">
+
+<div class="card">
+
+<h2>
+خدمات
+</h2>
+
+<p>
+• تولید محتوای شبکه‌های اجتماعی<br>
+• ساخت تصاویر و ویدئو با AI<br>
+• ایده‌پردازی و سناریونویسی<br>
+• مشاوره ابزارهای هوش مصنوعی
 </p>
 
 </div>
@@ -160,18 +267,22 @@ Sharifian<span class="highlight">.ai</span>
 
 <div class="card">
 
-<h2>مهارت‌ها و ابزارها</h2>
+<h2>
+ابزارها
+</h2>
+
 
 <div class="skills">
 
 <span>ChatGPT</span>
 <span>Claude</span>
+<span>Midjourney</span>
 <span>Canva AI</span>
-<span>تولید تصویر AI</span>
+<span>Runway</span>
 <span>تولید ویدئو AI</span>
-<span>سناریونویسی</span>
 
 </div>
+
 
 </div>
 
@@ -181,12 +292,14 @@ Sharifian<span class="highlight">.ai</span>
 
 <section id="portfolio">
 
-<div class="card portfolio">
+<div class="card">
 
-<h2>نمونه‌کارها</h2>
+<h2>
+نمونه‌کارها
+</h2>
 
 <p>
-به زودی پروژه‌های تولید محتوا، تصاویر و ویدئوهای هوش مصنوعی اضافه می‌شوند.
+به زودی پروژه‌های هوش مصنوعی و نمونه‌های تولید محتوا اضافه می‌شوند.
 </p>
 
 </div>
@@ -195,30 +308,13 @@ Sharifian<span class="highlight">.ai</span>
 
 
 
-<section>
+<section id="contact">
 
 <div class="card">
 
-<h2>خدمات</h2>
-
-<p>
-• تولید محتوای شبکه‌های اجتماعی<br>
-• ساخت تصاویر و ویدئو با هوش مصنوعی<br>
-• ایده‌پردازی و سناریونویسی<br>
-• مشاوره استفاده از ابزارهای AI
-</p>
-
-</div>
-
-</section>
-
-
-
-<section>
-
-<div class="card">
-
-<h2>ارتباط با من</h2>
+<h2>
+ارتباط با من
+</h2>
 
 <p>
 ایمیل | اینستاگرام | لینکدین
@@ -229,12 +325,16 @@ Sharifian<span class="highlight">.ai</span>
 </section>
 
 
+
 <footer>
+
 © Sharifian.ai
+
 </footer>
 
 
 </div>
+
 
 </body>
 </html>
