@@ -533,16 +533,46 @@ margin-bottom:25px;
 }
 
 
-
 .section p{
 
-max-width:700px;
+max-width:1100px;
 
 margin:auto;
 
-line-height:2;
+line-height:1.8;
+
+font-size:16px;
+
+white-space:nowrap;
+
+color:#d7d2c7;
 
 }
+
+
+.ai-text{
+
+color:var(--green);
+
+text-shadow:
+0 0 15px var(--green-glow);
+
+}
+
+
+
+@media(max-width:900px){
+
+.section p{
+
+white-space:normal;
+
+font-size:15px;
+
+}
+
+}
+
 
 
 
