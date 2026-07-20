@@ -8,7 +8,6 @@
 
 <title>Sharifian.ai | AI Content Studio</title>
 
-
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
@@ -39,7 +38,7 @@ padding:20px;
 }
 
 
-/* NAVIGATION */
+/* NAV */
 
 nav{
 
@@ -71,7 +70,7 @@ color:#10B981;
 .menu a{
 
 text-decoration:none;
-color:#C9D1CC;
+color:#CBD5D1;
 margin:0 12px;
 font-size:15px;
 
@@ -99,7 +98,6 @@ font-weight:700;
 
 /* HERO */
 
-
 .hero{
 
 min-height:75vh;
@@ -113,6 +111,7 @@ gap:60px;
 .hero-text{
 
 flex:1;
+animation:fadeUp 1.2s ease forwards;
 
 }
 
@@ -178,12 +177,7 @@ border-radius:40px;
 }
 
 
-
-
-
-
 /* AI CARD */
-
 
 .hero-card{
 
@@ -205,11 +199,11 @@ overflow:hidden;
 
 content:"";
 position:absolute;
-width:230px;
-height:230px;
+width:220px;
+height:220px;
 background:#10B981;
 border-radius:50%;
-filter:blur(55px);
+filter:blur(60px);
 opacity:.25;
 
 }
@@ -226,8 +220,8 @@ font-family:'Inter',sans-serif;
 
 .ai-content h2{
 
-margin:0;
 font-size:38px;
+margin:0;
 color:#F5F1E8;
 
 }
@@ -238,7 +232,94 @@ color:#F5F1E8;
 display:block;
 color:#10B981;
 font-size:18px;
-margin-top:15px;
+margin-top:12px;
+
+}
+/* AI MOTION */
+
+.hero-card::after{
+
+content:"";
+position:absolute;
+width:12px;
+height:12px;
+background:#10B981;
+border-radius:50%;
+
+left:15%;
+top:50%;
+
+box-shadow:
+0 0 15px #10B981,
+0 0 35px #10B981;
+
+animation:aiMove 5s infinite ease-in-out;
+
+opacity:.8;
+
+}
+
+
+@keyframes aiMove{
+
+0%{
+
+transform:translate(0,0) scale(1);
+opacity:0;
+
+}
+
+
+20%{
+
+opacity:1;
+
+}
+
+
+50%{
+
+transform:translate(230px,-20px) scale(1.4);
+opacity:.8;
+
+}
+
+
+80%{
+
+transform:translate(420px,10px) scale(.8);
+opacity:.2;
+
+}
+
+
+100%{
+
+transform:translate(500px,0);
+opacity:0;
+
+}
+
+}
+
+
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(25px);
+
+}
+
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
 
 }
 
@@ -259,7 +340,7 @@ margin:80px 0;
 
 text-align:center;
 font-size:36px;
-margin-bottom:10px;
+margin-bottom:15px;
 
 }
 
@@ -272,10 +353,6 @@ margin-bottom:45px;
 
 }
 
-
-
-
-/* CARDS */
 
 
 .cards{
@@ -311,7 +388,6 @@ color:#CBD5D1;
 }
 
 
-
 .icon{
 
 font-size:35px;
@@ -341,8 +417,6 @@ margin:6px;
 color:#F5F1E8;
 
 }
-
-
 
 
 
@@ -400,7 +474,6 @@ display:none;
 }
 
 
-
 </style>
 
 </head>
@@ -426,13 +499,16 @@ Sharifian<span>.ai</span>
 درباره
 </a>
 
+
 <a href="#services">
 خدمات
 </a>
 
+
 <a href="#portfolio">
 نمونه‌کار
 </a>
+
 
 <a href="#contact">
 ارتباط
@@ -448,9 +524,6 @@ Sharifian<span>.ai</span>
 
 
 </nav>
-
-
-
 
 
 <div class="hero">
@@ -480,7 +553,6 @@ Sharifian<span>.ai</span>
 </p>
 
 
-
 <a class="btn" href="#contact">
 شروع همکاری
 </a>
@@ -495,7 +567,6 @@ Sharifian<span>.ai</span>
 
 
 
-
 <div class="hero-card">
 
 
@@ -505,9 +576,11 @@ Sharifian<span>.ai</span>
 Sharifian.ai
 </h2>
 
+
 <span>
 AI Content
 </span>
+
 
 <span>
 Creative Studio
@@ -521,7 +594,6 @@ Creative Studio
 
 
 </div>
-
 <section id="about">
 
 
@@ -546,11 +618,11 @@ Creative Studio
 </div>
 
 <h3>
-سرعت در اجرا
+خلاقیت + تکنولوژی
 </h3>
 
 <p>
-تبدیل ایده‌ها به خروجی حرفه‌ای در زمان کوتاه‌تر.
+ترکیب ایده‌پردازی انسانی با ابزارهای مدرن برای ساخت محتوای متفاوت.
 </p>
 
 </div>
@@ -560,15 +632,15 @@ Creative Studio
 <div class="card">
 
 <div class="icon">
-💡
+🚀
 </div>
 
 <h3>
-خلاقیت بیشتر
+سرعت و انعطاف
 </h3>
 
 <p>
-ترکیب ایده‌پردازی انسانی با ابزارهای مدرن دیجیتال.
+تبدیل سریع ایده‌ها به خروجی حرفه‌ای بدون کاهش کیفیت.
 </p>
 
 </div>
@@ -582,11 +654,11 @@ Creative Studio
 </div>
 
 <h3>
-محتوای هدفمند
+تمرکز روی نتیجه
 </h3>
 
 <p>
-ساخت محتوا بر اساس هدف، مخاطب و نیاز برند.
+محتوا برای دیده شدن، ارتباط بهتر و رشد برند ساخته می‌شود.
 </p>
 
 </div>
@@ -596,7 +668,6 @@ Creative Studio
 
 
 </section>
-
 
 
 
@@ -640,7 +711,7 @@ Creative Studio
 </h3>
 
 <p>
-ساخت تصاویر و ویدئوهای خلاقانه برای برندها.
+ساخت تصاویر و ویدئوهای خلاقانه برای معرفی بهتر برند.
 </p>
 
 </div>
@@ -669,7 +740,6 @@ Creative Studio
 
 
 
-
 <section id="portfolio">
 
 
@@ -683,12 +753,11 @@ Creative Studio
 </p>
 
 
-
 <div class="card">
 
 
 <p>
-نمونه پروژه‌های طراحی محتوا، تصویر و ویدئو در این بخش قرار خواهند گرفت.
+نمونه پروژه‌های طراحی محتوا، تصویر و ویدئو در این بخش اضافه خواهند شد.
 </p>
 
 
@@ -701,15 +770,12 @@ Creative Studio
 
 
 
-
-
 <section>
 
 
 <h2 class="section-title">
 ابزارها
 </h2>
-
 
 
 <div class="card skills">
@@ -749,15 +815,12 @@ Canva AI
 
 
 
-
-
 <section id="contact">
 
 
 <h2 class="section-title">
 ارتباط با من
 </h2>
-
 
 
 <div class="card">
@@ -782,15 +845,11 @@ Canva AI
 
 
 
-
-
 <footer>
 
 © Sharifian.ai
 
 </footer>
-
-
 
 
 </div>
@@ -799,3 +858,4 @@ Canva AI
 </body>
 
 </html>
+
