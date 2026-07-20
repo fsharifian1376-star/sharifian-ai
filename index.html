@@ -8,23 +8,21 @@
 
 <title>Sharifian.ai | AI Content Studio</title>
 
-<style>
 
+<style>
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
 
+
 *{
 box-sizing:border-box;
-scroll-behavior:smooth;
 }
 
 
 body{
 
 margin:0;
-body{
 font-family:'Vazirmatn',sans-serif;
-}
 background:#151A18;
 color:#F5F1E8;
 line-height:1.8;
@@ -41,7 +39,7 @@ padding:20px;
 }
 
 
-/* NAV */
+/* NAVIGATION */
 
 nav{
 
@@ -54,10 +52,10 @@ padding:25px 0;
 
 
 .logo{
+
 font-family:'Inter',sans-serif;
 font-size:32px;
 font-weight:800;
-}
 color:#F5F1E8;
 
 }
@@ -70,11 +68,10 @@ color:#10B981;
 }
 
 
-
 .menu a{
 
-color:#D1D5DB;
 text-decoration:none;
+color:#C9D1CC;
 margin:0 12px;
 font-size:15px;
 
@@ -97,7 +94,6 @@ border-radius:30px;
 font-weight:700;
 
 }
-
 
 
 
@@ -126,10 +122,7 @@ flex:1;
 font-size:46px;
 line-height:1.6;
 font-weight:700;
-
-}
-
-}
+margin:0;
 
 }
 
@@ -143,7 +136,7 @@ color:#10B981;
 
 .hero p{
 
-font-size:20px;
+font-size:19px;
 color:#CBD5D1;
 margin-top:25px;
 
@@ -171,10 +164,25 @@ background:#34D399;
 }
 
 
+.btn-outline{
+
+display:inline-block;
+margin-top:30px;
+margin-right:12px;
+padding:14px 35px;
+border:1px solid #10B981;
+color:#10B981;
+text-decoration:none;
+border-radius:40px;
+
+}
 
 
 
-/* AI BOX */
+
+
+
+/* AI CARD */
 
 
 .hero-card{
@@ -182,7 +190,7 @@ background:#34D399;
 width:360px;
 height:360px;
 background:#202824;
-border:1px solid #27332E;
+border:1px solid #293630;
 border-radius:40px;
 display:flex;
 align-items:center;
@@ -197,25 +205,47 @@ overflow:hidden;
 
 content:"";
 position:absolute;
-width:220px;
-height:220px;
+width:230px;
+height:230px;
 background:#10B981;
 border-radius:50%;
-filter:blur(40px);
-opacity:.35;
+filter:blur(55px);
+opacity:.25;
 
 }
 
 
-.ai-core{
+.ai-content{
 
 position:relative;
-font-size:80px;
-font-weight:800;
+text-align:center;
+font-family:'Inter',sans-serif;
+
+}
+
+
+.ai-content h2{
+
+margin:0;
+font-size:38px;
 color:#F5F1E8;
 
 }
 
+
+.ai-content span{
+
+display:block;
+color:#10B981;
+font-size:18px;
+margin-top:15px;
+
+}
+
+
+
+
+/* SECTIONS */
 
 
 section{
@@ -225,23 +255,27 @@ margin:80px 0;
 }
 
 
-.title{
+.section-title{
 
 text-align:center;
 font-size:36px;
-color:#F5F1E8;
 margin-bottom:10px;
 
 }
 
 
-.subtitle{
+.section-desc{
 
 text-align:center;
-color:#A7B0AC;
-margin-bottom:40px;
+color:#AAB3AE;
+margin-bottom:45px;
 
 }
+
+
+
+
+/* CARDS */
 
 
 .cards{
@@ -277,6 +311,7 @@ color:#CBD5D1;
 }
 
 
+
 .icon{
 
 font-size:35px;
@@ -284,6 +319,8 @@ font-size:35px;
 }
 
 
+
+/* SKILLS */
 
 
 .skills{
@@ -298,12 +335,13 @@ justify-content:center;
 .skills span{
 
 background:#26332D;
-color:#F5F1E8;
 padding:10px 20px;
 border-radius:30px;
 margin:6px;
+color:#F5F1E8;
 
 }
+
 
 
 
@@ -319,8 +357,8 @@ color:#8F9994;
 
 
 
-
 @media(max-width:850px){
+
 
 .hero{
 
@@ -340,7 +378,7 @@ height:280px;
 
 .hero h1{
 
-font-size:38px;
+font-size:36px;
 
 }
 
@@ -358,7 +396,9 @@ display:none;
 
 }
 
+
 }
+
 
 
 </style>
@@ -372,7 +412,6 @@ display:none;
 <div class="container">
 
 
-
 <nav>
 
 
@@ -383,15 +422,27 @@ Sharifian<span>.ai</span>
 
 <div class="menu">
 
-<a href="#about">درباره</a>
-<a href="#services">خدمات</a>
-<a href="#tools">ابزارها</a>
-<a href="#portfolio">نمونه‌کار</a>
-<a href="#contact">ارتباط</a>
+<a href="#about">
+درباره
+</a>
+
+<a href="#services">
+خدمات
+</a>
+
+<a href="#portfolio">
+نمونه‌کار
+</a>
+
+<a href="#contact">
+ارتباط
+</a>
+
 
 <a class="nav-btn" href="#contact">
 شروع همکاری
 </a>
+
 
 </div>
 
@@ -417,6 +468,7 @@ Sharifian<span>.ai</span>
 </span>
 
 با هوش مصنوعی
+
 </h1>
 
 
@@ -425,12 +477,17 @@ Sharifian<span>.ai</span>
 کمک به برندها و کسب‌وکارها برای ساخت محتوای خلاقانه،
 سریع و هدفمند در دنیای دیجیتال.
 
-
 </p>
 
 
+
 <a class="btn" href="#contact">
-شروع پروژه
+شروع همکاری
+</a>
+
+
+<a class="btn-outline" href="#portfolio">
+مشاهده نمونه‌کارها
 </a>
 
 
@@ -441,9 +498,21 @@ Sharifian<span>.ai</span>
 
 <div class="hero-card">
 
-<div class="ai-core">
-AI
-</div>
+
+<div class="ai-content">
+
+<h2>
+Sharifian.ai
+</h2>
+
+<span>
+AI Content
+</span>
+
+<span>
+Creative Studio
+</span>
+
 
 </div>
 
@@ -451,21 +520,18 @@ AI
 </div>
 
 
-
-
-
-
-
+</div>
 
 <section id="about">
 
 
-<h2 class="title">
+<h2 class="section-title">
 چرا Sharifian.ai؟
 </h2>
 
-<p class="subtitle">
-خلاقیت، تکنولوژی و استراتژی محتوا در یک مسیر
+
+<p class="section-desc">
+محتوای هدفمند برای برندهایی که متفاوت فکر می‌کنند
 </p>
 
 
@@ -475,14 +541,16 @@ AI
 
 <div class="card">
 
-<div class="icon">⚡</div>
+<div class="icon">
+⚡
+</div>
 
 <h3>
-سرعت و بهره‌وری
+سرعت در اجرا
 </h3>
 
 <p>
-تولید ایده و محتوا با کمک ابزارهای هوشمند.
+تبدیل ایده‌ها به خروجی حرفه‌ای در زمان کوتاه‌تر.
 </p>
 
 </div>
@@ -491,14 +559,16 @@ AI
 
 <div class="card">
 
-<div class="icon">🤖</div>
+<div class="icon">
+💡
+</div>
 
 <h3>
-هوش مصنوعی
+خلاقیت بیشتر
 </h3>
 
 <p>
-استفاده از مدل‌ها و ابزارهای روز AI.
+ترکیب ایده‌پردازی انسانی با ابزارهای مدرن دیجیتال.
 </p>
 
 </div>
@@ -507,14 +577,16 @@ AI
 
 <div class="card">
 
-<div class="icon">🎨</div>
+<div class="icon">
+🎯
+</div>
 
 <h3>
-خلاقیت دیجیتال
+محتوای هدفمند
 </h3>
 
 <p>
-ساخت محتوای متفاوت برای برندها.
+ساخت محتوا بر اساس هدف، مخاطب و نیاز برند.
 </p>
 
 </div>
@@ -530,13 +602,18 @@ AI
 
 
 
-
 <section id="services">
 
 
-<h2 class="title">
+<h2 class="section-title">
 خدمات
 </h2>
+
+
+<p class="section-desc">
+راهکارهای تولید محتوای مدرن برای کسب‌وکارها
+</p>
+
 
 
 <div class="cards">
@@ -549,7 +626,7 @@ AI
 </h3>
 
 <p>
-متن، سناریو و ایده برای شبکه‌های اجتماعی.
+ایده‌پردازی، متن، سناریو و محتوای شبکه‌های اجتماعی.
 </p>
 
 </div>
@@ -559,11 +636,11 @@ AI
 <div class="card">
 
 <h3>
-تصویر و ویدئو AI
+تصویر و ویدئو
 </h3>
 
 <p>
-ساخت تصاویر و ویدئوهای خلاقانه.
+ساخت تصاویر و ویدئوهای خلاقانه برای برندها.
 </p>
 
 </div>
@@ -573,11 +650,11 @@ AI
 <div class="card">
 
 <h3>
-مشاوره AI
+مشاوره دیجیتال
 </h3>
 
 <p>
-انتخاب ابزار و طراحی مسیر استفاده از AI.
+انتخاب مسیر مناسب برای استفاده از ابزارهای هوشمند.
 </p>
 
 </div>
@@ -587,36 +664,6 @@ AI
 
 
 </section>
-
-
-
-
-
-
-
-<section id="tools">
-
-
-<h2 class="title">
-ابزارهای AI
-</h2>
-
-
-<div class="card skills">
-
-
-<span>ChatGPT</span>
-<span>Claude</span>
-<span>Midjourney</span>
-<span>Runway</span>
-<span>Canva AI</span>
-
-
-</div>
-
-
-</section>
-
 
 
 
@@ -626,19 +673,72 @@ AI
 <section id="portfolio">
 
 
-<h2 class="title">
+<h2 class="section-title">
 نمونه‌کارها
 </h2>
 
 
+<p class="section-desc">
+پروژه‌ها و نمونه‌های تولید محتوا
+</p>
+
+
+
 <div class="card">
 
+
 <p>
-
-نمونه پروژه‌های تولید محتوا، طراحی تصویر و ویدئو
-در این بخش قرار خواهند گرفت.
-
+نمونه پروژه‌های طراحی محتوا، تصویر و ویدئو در این بخش قرار خواهند گرفت.
 </p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2 class="section-title">
+ابزارها
+</h2>
+
+
+
+<div class="card skills">
+
+
+<span>
+ChatGPT
+</span>
+
+
+<span>
+Claude
+</span>
+
+
+<span>
+Midjourney
+</span>
+
+
+<span>
+Runway
+</span>
+
+
+<span>
+Canva AI
+</span>
+
 
 </div>
 
@@ -654,23 +754,22 @@ AI
 <section id="contact">
 
 
-<h2 class="title">
-ارتباط
+<h2 class="section-title">
+ارتباط با من
 </h2>
+
 
 
 <div class="card">
 
+
 <p>
-
-برای همکاری و سفارش پروژه‌های AI با من در ارتباط باشید.
-
+برای همکاری و سفارش پروژه‌های محتوایی با من در ارتباط باشید.
 </p>
 
+
 <p>
-
 ایمیل | اینستاگرام | لینکدین
-
 </p>
 
 
@@ -678,6 +777,8 @@ AI
 
 
 </section>
+
+
 
 
 
