@@ -1412,3 +1412,26 @@ font-size:15px;
 
 
 }
+.hero h1{
+  font-size:42px;
+  line-height:1.35;
+  letter-spacing:-1px;
+  max-width:850px;
+  white-space:normal;
+}
+
+.hero h1 span{
+  display:block;
+  margin-top:5px;
+  color:var(--green);
+}
+
+
+@media(max-width:900px){
+
+.hero h1{
+  font-size:34px;
+  max-width:100%;
+}
+
+}
